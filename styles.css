@@ -8,16 +8,28 @@ body {
     display: block;
 }
 
-#creativityText {
+#creativityDefinition {
     display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     color: white;
-    font-size: 5rem;
     text-align: center;
     animation: grow 3s forwards;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-width: 90%;
+}
+
+#creativityDefinition h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+#creativityDefinition p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
 }
 
 @keyframes grow {
@@ -26,5 +38,15 @@ body {
     }
     100% {
         transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@media (min-width: 600px) {
+    #creativityDefinition h1 {
+        font-size: 2rem;
+    }
+
+    #creativityDefinition p {
+        font-size: 1.25rem;
     }
 }

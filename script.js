@@ -42,6 +42,6 @@ setTimeout(() => {
     fadeOut = true;
     setTimeout(() => {
         clearInterval(intervalId);
-        document.getElementById('creativityText').style.display = 'block';
+        document.getElementById('creativityDefinition').style.display = 'block';
     }, 3000);
 }, 7000);
